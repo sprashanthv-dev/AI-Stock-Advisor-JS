@@ -1,3 +1,4 @@
+/* Base Styles */
 * {
     box-sizing: border-box;
 }
@@ -25,4 +26,35 @@ header img {
 main {
     display: flex;
     justify-content: center;
+}
+
+/* Panels */
+.action-panel, .output-panel {
+    line-height: 1.4em;
+    display: flex;
+    height: 350px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5em 2em;
+}
+
+
+.output-panel {
+    display: none;
+    justify-content: flex-start;
+    border: 2px solid;
+    padding: 1em 2em;
+}
+
+.loading-panel {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+    text-align: center;
+}
+
+.output-panel p {
+    overflow-y: scroll;
 }
