@@ -59,6 +59,30 @@ main {
     overflow-y: scroll;
 }
 
+/* Text */
+
+h2 {
+    text-align: center;
+    font-weight: 400;
+    margin-top: -26px;
+    background-color: #f6f6f6;
+    padding: 0 10px;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+p.tag-line {
+    font-family: 'Comic Neue', serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.ticker-choice-display {
+    display: flex;
+    align-items: center;
+    height: 3em;
+}
+
 /* Input controls */
 form {
     width: 360px;
@@ -84,4 +108,32 @@ input[type="text"] {
     padding: 1em;
     border: 2px solid black;
     border-right: none;
+}
+
+/* Buttons */
+.add-ticker-btn {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    font-size: 3em;
+    padding: 0.35em;
+    cursor: pointer;
+    border: 2px solid;
+}
+
+.add-ticker-svg {
+    width: 14px;
+}
+
+.generate-report-btn {
+    width: 70%;
+    padding: 1em 1.5em;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #000000;
+    background-color: #46ff90;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    font-size: 105%;
 }
