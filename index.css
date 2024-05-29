@@ -58,3 +58,30 @@ main {
 .output-panel p {
     overflow-y: scroll;
 }
+
+/* Input controls */
+form {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    text-align: center;
+    padding: .43em;
+    font-size: 15px;
+    margin-bottom: 1em;
+    width: 80%;
+}
+
+.form-input-control {
+    display: flex;
+    width: 70%;
+}
+
+input[type="text"] {
+    padding: 1em;
+    border: 2px solid black;
+    border-right: none;
+}
