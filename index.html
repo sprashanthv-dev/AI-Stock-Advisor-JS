@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodgy Dave's AI Powered Stock Predictor</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <img src="images/logo-dave-text.png" alt="AI Stock Predictor Logo">
+    </header>
+    <main>
+        <section class="action-panel">
+            <!-- Input form -->
+            <form id="ticker-input-form">
+                <label for="ticker-input">Add upto 3 stock tickers below 👇</label>
+                <div class="form-input-control">
+                    <input type="text" id="ticker-input" placeholder="Enter a ticker...">
+                    <button class="add-ticker-btn">
+                        <img src="images/add.svg" class="add-ticker-svg" alt="Add Ticker Button">
+                    </button>
+                </div>
+            </form>
+
+            <!-- Display selected tickers -->
+            <p class="ticker-choice-display">
+                Your stock tickers will appear here...
+            </p>
+
+            <!-- Generate Report Button -->
+            <button class="generate-report-btn" type="button" disabled>
+                Generate Report
+            </button>
+
+            <p class="tag-line">Accuracy untested! 😛</p>
+        </section>
+
+        <!-- Loader -->
+        <section class="loading-panel">
+            <img src="images/loader.svg" alt="Loader Image">
+            <div id="api-message">Querying Stocks API...</div>
+        </section>
+
+        <!-- Display the generated report -->
+        <section class="output-panel">
+            <h2>Your Report 😎</h2>
+        </section>
+    </main>
+
+    <footer>
+        &copy; This is not real financial advice!
+    </footer>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
