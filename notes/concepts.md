@@ -12,3 +12,8 @@
    - The OpenAI API returns back an `assistant` object which contains the AI output.
    - The OpenAI API is available as a library through npm
    - `Chat completions API` is the endpoint to use for any kind of text generation capabilities
+ - Messages array:
+   - We need the `system` and `user` object for our app.
+   - `system` - Anything that controls how the model behaves
+   - `user` - Asks for a specific task to be completed
+   - 
